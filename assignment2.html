@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            width: 50%;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .form-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-buttons input {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .reset-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Data</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="tel" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" name="address" required></td>
+                </tr>
+            </table>
+            <div class="form-buttons">
+                <input type="submit" value="Submit" class="submit-btn">
+                <input type="reset" value="Reset" class="reset-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
